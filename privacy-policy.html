@@ -67,19 +67,39 @@ Once a payment is successfully completed, it is strictly non-refundable
 under any circumstances.
 Any refund-related policies are governed by Google Play’s refund policy.
 
-<h3>6. Account Access & Deletion</h3>
-MK Trader provides users with full control over their account.
-Users can delete their account directly from inside the app using the
-available account delete option.
-Once an account is deleted, all associated user data is permanently removed
-and access to purchased content is revoked.
-Account deletion is irreversible.
+<h3>6. Account Deletion</h3>
+
+MK Trader allows users to request account deletion from within the application.
+
+When a user selects the account deletion option, the application redirects
+the user to our secure account deletion webpage.
+
+The user must verify their mobile number using Firebase Phone Authentication
+and submit the account deletion request.
+
+The deletion request is recorded for administrative processing.
+Actual account and associated data deletion may be completed after the
+request is reviewed and verified.
+
+Account deletion is irreversible once completed.
 
 <h3>7. Data Retention & Deletion</h3>
-User data is retained only while the account is active.
-When a user deletes their account, the associated data is deleted
-from our systems within a reasonable time.
-We do not retain unnecessary or inactive user data.
+
+User data is retained while the account remains active.
+
+When a user submits an account deletion request, the request is recorded
+for verification and administrative processing.
+
+After the deletion request is reviewed and approved, the applicable account
+and personal data are deleted from the relevant systems.
+
+Certain records may be retained where required for legal, regulatory,
+security, fraud-prevention, accounting, or transaction-related purposes.
+
+Once applicable deletion is completed, access to the user's account and
+purchased content is revoked.
+
+Deletion of an account is irreversible.
 
 <h3>8. Data Security</h3>
 User data is securely stored using Firebase and Google services.
@@ -185,7 +205,6 @@ Upon successful completion of the rewarded advertisement:
 <ul>
 <li>Access is granted for a limited duration (e.g., mid-night expiry).</li>
 <li>Access expires automatically after the defined time period.</li>
-<li>No monetary payment is required for such temporary unlocks some content.</li>
 </ul>
 <p>
 MK Trader does not guarantee uninterrupted availability of rewarded ads. 
@@ -225,7 +244,8 @@ MK Trader integrates the following third-party services:
 </p>
 <ul>
 <li><strong>Google AdMob SDK</strong> – For displaying advertisements.</li>
-<li><strong>Firebase Authentication</strong> – For mobile OTP login verification.</li>
+<li><strong>Firebase Authentication</strong> – For mobile OTP login,
+mobile number authentication, and identity verification.</li>
 <li><strong>Firebase Services</strong> – For secure data storage and session management.</li>
 </ul>
 <p>
